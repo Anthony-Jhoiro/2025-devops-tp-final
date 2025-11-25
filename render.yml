@@ -1,0 +1,8 @@
+# render.yaml (à la racine du projet)
+# Ceci sera utilisé pour configurer le proxy du service statique (Frontend)
+
+redirects:
+  - from: /api/*
+    # Remplacer cette URL par l'URL définitive de votre service API Render
+    to: https://tp-final-backend-xxxx.onrender.com/api/:splat
+    status: 200
